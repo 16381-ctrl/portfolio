@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Education | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#d8f3ff,#f5fcff,#ffffff);
+overflow-x:hidden;
+}
+
+/* หิมะ */
+
+.snow{
+position:fixed;
+top:-10%;
+font-size:25px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.s1{left:5%;animation-duration:8s;}
+.s2{left:18%;animation-duration:10s;}
+.s3{left:35%;animation-duration:7s;}
+.s4{left:50%;animation-duration:9s;}
+.s5{left:68%;animation-duration:11s;}
+.s6{left:82%;animation-duration:8s;}
+.s7{left:95%;animation-duration:10s;}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+/* เมนู */
+
+nav{
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+color:#4A90E2;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#0D6EFD;
+}
+
+/* หัวข้อ */
+
+.title{
+text-align:center;
+margin:50px 20px;
+}
+
+.title h1{
+font-size:48px;
+color:#2E86DE;
+}
+
+.title p{
+font-size:20px;
+color:#666;
+margin-top:10px;
+}
+
+/* กล่องการศึกษา */
+
+.education{
+max-width:1100px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(10px);
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+color:#2E86DE;
+margin-bottom:20px;
+text-align:center;
+}
+
+.card p{
+font-size:18px;
+line-height:35px;
+color:#555;
+}
+
+/* Footer */
+
+footer{
+margin-top:50px;
+background:#78C8FF;
+padding:20px;
+text-align:center;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="snow s1">❄️</span>
+<span class="snow s2">❄️</span>
+<span class="snow s3">❄️</span>
+<span class="snow s4">❄️</span>
+<span class="snow s5">❄️</span>
+<span class="snow s6">❄️</span>
+<span class="snow s7">❄️</span>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="profile.html">👤 Profile</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>🎓 Education</h1>
+
+<p>ประวัติการศึกษา</p>
+
+</div>
+
+<div class="education">
+
+<div class="card">
+
+<h2>📘 มัธยมศึกษาตอนต้น</h2>
+
+<p>
+
+🏫 <b>โรงเรียน</b><br>
+โรงเรียนวัดท้องคุ้ง "ไพโรจน์ประชาสรรค์"
+
+<br><br>
+
+📖 <b>แผนการเรียน</b><br>
+ศิลป์ทั่วไป
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📙 มัธยมศึกษาตอนปลาย</h2>
+
+<p>
+
+🏫 <b>โรงเรียน</b><br>
+โรงเรียนพานทอง
+
+<br><br>
+
+📖 <b>แผนการเรียน</b><br>
+ศิลป์ภาษา
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+❄️ Education Portfolio | Natcha Kawee ❄️
+
+</footer>
+
+</body>
+</html>
