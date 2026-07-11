@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Contact | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#DFF4FF,#F7FCFF,#EAF7FF);
+overflow-x:hidden;
+}
+
+/* หิมะ */
+
+.snow{
+position:fixed;
+top:-10%;
+font-size:24px;
+pointer-events:none;
+animation:fall linear infinite;
+opacity:.9;
+}
+
+.s1{left:5%;animation-duration:8s;}
+.s2{left:20%;animation-duration:10s;}
+.s3{left:35%;animation-duration:7s;}
+.s4{left:50%;animation-duration:9s;}
+.s5{left:65%;animation-duration:11s;}
+.s6{left:80%;animation-duration:8s;}
+.s7{left:95%;animation-duration:10s;}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+}
+
+/* เมนู */
+
+nav{
+background:white;
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:500;
+color:#3498DB;
+}
+
+nav a:hover{
+color:#0A6FD6;
+}
+
+/* หัวข้อ */
+
+.title{
+text-align:center;
+margin:45px 20px;
+}
+
+.title h1{
+font-size:48px;
+color:#3498DB;
+}
+
+.title p{
+font-size:20px;
+color:#666;
+margin-top:10px;
+}
+
+/* กล่อง */
+
+.card{
+max-width:700px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+text-align:center;
+}
+
+/* รูป */
+
+.card img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #BEE7FF;
+margin-bottom:20px;
+}
+
+.card h2{
+color:#3498DB;
+font-size:36px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:18px;
+color:#666;
+margin-bottom:30px;
+}
+
+/* กล่องข้อมูล */
+
+.info{
+background:#EEF8FF;
+padding:18px;
+margin:18px 0;
+border-radius:20px;
+font-size:20px;
+}
+
+.info a{
+text-decoration:none;
+color:#0A6FD6;
+font-weight:bold;
+}
+
+.info:hover{
+transform:scale(1.02);
+transition:.3s;
+}
+
+footer{
+margin-top:60px;
+background:#5DB8FF;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<span class="snow s1">❄️</span>
+<span class="snow s2">❄️</span>
+<span class="snow s3">❄️</span>
+<span class="snow s4">❄️</span>
+<span class="snow s5">❄️</span>
+<span class="snow s6">❄️</span>
+<span class="snow s7">❄️</span>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="profile.html">Profile</a>
+<a href="education.html">Education</a>
+<a href="award.html">Awards</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="title">
+
+<h1>📩 Contact Me</h1>
+
+<p>ช่องทางการติดต่อ</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/B5E71C9C-A661-4DB5-8861-1263ECC6D614.jpeg" alt="Profile">
+
+<h2>นัฐชา กาวี</h2>
+
+<p>
+ขอบคุณที่เข้ามาเยี่ยมชม Portfolio ของฉัน
+หากต้องการติดต่อ สามารถติดต่อผ่านช่องทางด้านล่างได้
+</p>
+
+<div class="info">
+📷 Instagram<br><br>
+
+<a href="https://www.instagram.com/natcha14199" target="_blank">
+@natcha4199
+</a>
+
+</div>
+
+<div class="info">
+📧 Email<br><br>
+
+<a href="mailto:cheek8899@gmail.com">
+cheek8899@gmail.com
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+❄️ Thank You For Visiting My Portfolio ❄️
+
+</footer>
+
+</body>
+</html>
