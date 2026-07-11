@@ -6,7 +6,7 @@
 
 <title>Contact | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,174 +14,160 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Kanit',sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#B8E8FF,#EAF8FF,#FFFFFF);
-color:#2F4F6F;
+background:linear-gradient(180deg,#cfefff,#eaf8ff,#ffffff);
+overflow-x:hidden;
+color:#234;
+}
+
+/* หิมะ */
+
+.snow{
+position:fixed;
+top:-10%;
+font-size:24px;
+pointer-events:none;
+animation:snowFall linear infinite;
+opacity:.9;
+}
+
+.n1{left:5%;animation-duration:8s;}
+.n2{left:15%;animation-duration:11s;}
+.n3{left:28%;animation-duration:9s;}
+.n4{left:40%;animation-duration:10s;}
+.n5{left:55%;animation-duration:7s;}
+.n6{left:68%;animation-duration:12s;}
+.n7{left:82%;animation-duration:9s;}
+.n8{left:95%;animation-duration:11s;}
+
+@keyframes snowFall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:.4;
+}
+
 }
 
 header{
-background:white;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(15px);
 padding:20px;
-text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-header h1{
-color:#ff4f94;
-font-size:38px;
-}
-
 nav{
-margin-top:15px;
+display:flex;
+justify-content:center;
+gap:35px;
 }
 
 nav a{
 text-decoration:none;
-color:#666;
-margin:0 18px;
+color:#4a6fa5;
 font-size:18px;
-font-weight:500;
+font-weight:600;
 transition:.3s;
 }
 
 nav a:hover{
-color:#ff4f94;
+color:#1f8fff;
 }
 
 .container{
-max-width:800px;
+max-width:900px;
 margin:60px auto;
 padding:20px;
 }
 
 .card{
-background:rgba(255,255,255,.75);
-backdrop-filter:blur(15px);
-border:2px solid #D9F1FF;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:35px;
+padding:45px;
+text-align:center;
+box-shadow:0 15px 35px rgba(100,150,255,.2);
+}
 
 .card img{
-width:180px;
-height:180px;
+width:190px;
+height:190px;
 border-radius:50%;
 object-fit:cover;
-border:6px solid #FFD6E8;
-margin-bottom:20px;
+border:6px solid #bfe7ff;
 }
 
-.card h2{
-color:#3A8DFF;
+.card h1{
+margin-top:20px;
+font-size:38px;
+color:#2b79d8;
 }
+
 .card p{
+margin-top:10px;
 font-size:18px;
-margin:15px 0;
+color:#567;
+}
+
+.contact{
+margin-top:35px;
+display:grid;
+gap:20px;
 }
 
 .contact-item{
-background:#FFF0F7;
-padding:18px;
-border-radius:15px;
-margin:18px 0;
+background:white;
+padding:20px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
 font-size:18px;
+}
+
+.contact-item:hover{
+transform:translateY(-5px);
 }
 
 .contact-item a{
-color:#ff4f94;
 text-decoration:none;
+color:#1f8fff;
 font-weight:bold;
 }
-
-.contact-item a:hover{
-text-decoration:underline;
-}
-
-footer{
-margin-top:50px;
-background:#ff9cc4;
-color:white;
-text-align:center;
-padding:18px;
-}
-
-/* 🌸 Sakura Effect */
-
-.sakura{
-position:fixed;
-top:-10%;
-font-size:28px;
-pointer-events:none;
-animation:fall linear infinite;
-z-index:999;
-opacity:.9;
-}
-
-.s1{left:5%;animation-duration:8s;}
-.s2{left:20%;animation-duration:10s;}
-.s3{left:35%;animation-duration:7s;}
-.s4{left:50%;animation-duration:9s;}
-.s5{left:65%;animation-duration:11s;}
-.s6{left:80%;animation-duration:8s;}
-.s7{left:92%;animation-duration:10s;}
-
-@keyframes fall{
-
-0%{
-transform:translateY(-100px) rotate(0deg);
-}
-
-100%{
-transform:translateY(110vh) rotate(360deg);
-}
-
-}
-  .top-menu{
-background:white;
-padding:20px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.top-menu a{
-text-decoration:none;
-margin:0 18px;
-font-size:18px;
-color:#666;
-font-weight:500;
-}
-
-.top-menu a:hover{
-color:#ff4f94;
-}
-  /* กล่องเมนู */
-
-/* เมนูแบบกล่อง */
 
 .menu-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:25px;
-max-width:800px;
-margin:40px auto;
+max-width:850px;
+margin:45px auto;
+padding:0 20px;
 }
 
 .menu-card{
-background:#FFD6E8;
-border-radius:25px;
+background:linear-gradient(135deg,#8dd6ff,#d9f2ff);
 padding:35px;
+border-radius:25px;
 text-align:center;
 text-decoration:none;
-color:#ff4f94;
+color:#2c6cb5;
 font-size:24px;
 font-weight:bold;
-box-shadow:0 8px 20px rgba(255,105,180,.2);
 transition:.3s;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
 }
 
 .menu-card:hover{
-background:#FFB8D2;
 transform:translateY(-8px);
+background:linear-gradient(135deg,#6bc8ff,#bde8ff);
 }
 
 .menu-card span{
@@ -190,92 +176,26 @@ font-size:45px;
 margin-bottom:10px;
 }
 
+footer{
+margin-top:40px;
+background:#69b7ff;
+color:white;
+padding:18px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.menu-grid{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-wrap:wrap;
+gap:18px;
+}
+
+}
+
 </style>
-
 </head>
-
-<body>
-
-<body>
-
-<span class="sakura s1">🌸</span>
-<span class="sakura s2">🌸</span>
-<span class="sakura s3">🌸</span>
-<span class="sakura s4">🌸</span>
-<span class="sakura s5">🌸</span>
-<span class="sakura s6">🌸</span>
-<span class="sakura s7">🌸</span>
-
-<header>
-
-<nav class="top-menu">
-
-<a href="index.html">Home</a>
-<a href="profile.html">Profile</a>
-<a href="education.html">Education</a>
-<a href="award.html">Awards</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-<div class="container">
-
-<div class="card">
-
-<img src="images/B5E71C9C-A661-4DB5-8861-1263ECC6D614.jpeg" alt="Profile">
-
-<h2>นัฐชา กาวี</h2>
-
-<p>สามารถติดต่อฉันได้ผ่านช่องทางด้านล่าง</p>
-
-<div class="contact-item">
-📷 Instagram :
-<a href="https://www.instagram.com/natcha14199" target="_blank">
-@natcha14199
-</a>
-</div>
-
-<div class="contact-item">
-📧 Email :
-<a href="mailto:cheek8899@gmail.com">
-cheek8899@gmail.com
-</a>
-</div>
-
-</div>
- <div class="menu-grid">
-
-<a href="profile.html" class="menu-card">
-<span>👤</span>
-
-  profile
-</a>
-
-<a href="education.html" class="menu-card">
-<span>🎓</span>
-
-  education
-</a>
-
-<a href="award.html" class="menu-card">
-<span>🏆</span>
-award
-</a>
-
-<a href="contact.html" class="menu-card">
-<span>📞</span>
-contact
-</a>
-
-</div>
-<footer>
-
-💖 Thank you for visiting my Portfolio 💖
-
-</footer>
-
-</body>
-</html>
- 
